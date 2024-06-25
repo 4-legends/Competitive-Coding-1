@@ -1,4 +1,11 @@
-// Find the missing element
+/* 
+Find the missing element
+
+Time Complexity: O(log(n))
+
+Space Complexity: O(1)
+
+*/
 
 #include <iostream>
 #include <vector>
@@ -23,31 +30,31 @@ int main(){
     int missing_element = 4;
     int result = findTheMissingElement(arr);
     if (missing_element != result) std::cout<< "Wrong Answer: " << result << " . Does not match expected result: " << missing_element << std::endl;
-    else std::cout<< "Answer matches: " << result << " . Does not match expected result: " << missing_element << std::endl;
+    else std::cout<< "Answer matches: " << result << " . Does match expected result: " << missing_element << std::endl;
 
     arr = {2,3,4,5,6,7,8,9};
     missing_element = 1;
     result = findTheMissingElement(arr);
     if (missing_element != result) std::cout<< "Wrong Answer: " << result << " . Does not match expected result: " << missing_element << std::endl;
-    else std::cout<< "Answer matches: " << result << " . Does not match expected result: " << missing_element << std::endl;
+    else std::cout<< "Answer matches: " << result << " . Does match expected result: " << missing_element << std::endl;
 
     arr = {1,3,4,5,6,7,8,9};
     missing_element = 2;
     result = findTheMissingElement(arr);
     if (missing_element != result) std::cout<< "Wrong Answer: " << result << " . Does not match expected result: " << missing_element << std::endl;
-    else std::cout<< "Answer matches: " << result << " . Does not match expected result: " << missing_element << std::endl;
+    else std::cout<< "Answer matches: " << result << " . Does match expected result: " << missing_element << std::endl;
     
     arr = {1,2, 3,4,5,6,7,9};
     missing_element = 8;
     result = findTheMissingElement(arr);
     if (missing_element != result) std::cout<< "Wrong Answer: " << result << " . Does not match expected result: " << missing_element << std::endl;
-    else std::cout<< "Answer matches: " << result << " . Does not match expected result: " << missing_element << std::endl;
+    else std::cout<< "Answer matches: " << result << " . Does match expected result: " << missing_element << std::endl;
 
     arr = {1,2,3,4,5,6,8,9};
     missing_element = 7;
     result = findTheMissingElement(arr);
     if (missing_element != result) std::cout<< "Wrong Answer: " << result << " . Does not match expected result: " << missing_element << std::endl;
-    else std::cout<< "Answer matches: " << result << " . Does not match expected result: " << missing_element << std::endl;
+    else std::cout<< "Answer matches: " << result << " . Does match expected result: " << missing_element << std::endl;
 
     return 0;
 }

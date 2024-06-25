@@ -1,4 +1,16 @@
-// Min heap
+/* 
+Min heap
+
+Find the missing element
+
+Time Complexity: 
+get, parentNode, leftNode, rightNode, isLeafNode, swap: O(1)
+minHeapify, remove, print: O(n)
+insert: Average case O(1), Worst case: O(n)
+
+Space Complexity: O(1)
+
+*/
 
 #include <iostream>
 class MinHeap{
@@ -106,6 +118,7 @@ int main(){
     std::cout << "The Min value in the heap is: " << minimumHeap.remove() << std::endl;
 
     std::cout << "The new Min Heap is" << std::endl;
+    minimumHeap.insert(33);
     minimumHeap.print();
     return 0;
 }
